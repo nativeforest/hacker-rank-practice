@@ -12,3 +12,21 @@ function birthdayCakeCandles(candles: number[]): number {
     }
     return sum
 }
+
+
+//v2
+function birthdayCakeCandles(candles: number[]): number {
+    let sum=0;
+	let value=candles[0];
+    for(let position=0;position<candles.length-1;position++){
+		
+		if(value==candles[position+1]){sum=sum+1}
+		if(value<candles[position+1]){
+            sum=1
+			value = candles[position+1];
+			}
+	
+	}
+	
+	return sum
+}
