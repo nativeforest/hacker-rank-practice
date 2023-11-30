@@ -20,6 +20,12 @@ Array.prototype.groupBy = function (key) {
   });
   return grouped;
 };
-//call
 const grouped = x.groupBy("value");
 console.log(grouped);
+
+//native solution example
+//function myCallback({ quantity }) {
+//     return quantity > 5 ? "ok" : "restock";
+// }
+
+// const result2 = Object.groupBy(inventory, myCallback);
