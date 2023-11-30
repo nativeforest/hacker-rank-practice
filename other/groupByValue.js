@@ -28,4 +28,4 @@ console.log(grouped);
 //     return quantity > 5 ? "ok" : "restock";
 // }
 
-// const result2 = Object.groupBy(inventory, myCallback);
+// const result = Object.groupBy(inventory, myCallback);
